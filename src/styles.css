@@ -56,34 +56,21 @@ body {
   z-index: 70;
 }
 
-.brand {
+.topbar-contact {
   display: flex;
-  align-items: center;
-  gap: 14px;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
+
+.topbar-contact a {
+  color: #22314d;
+  font-weight: 600;
   text-decoration: none;
 }
 
-.brand-mark {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, #f47631, #d9531e);
-  color: white;
-  font-weight: 800;
-  font-size: 1.2rem;
-}
-
-.brand-name {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 800;
-}
-
-.brand-tag {
-  color: #5f6472;
-  font-size: 0.8rem;
+.topbar-contact a:hover {
+  color: #d9531e;
 }
 
 .nav-links {
@@ -539,6 +526,33 @@ h1 {
   border-radius: 24px;
 }
 
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 28px 0 16px;
+  margin-top: 24px;
+  border-top: 1px solid rgba(20, 33, 61, 0.1);
+}
+
+.footer-contact {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-contact a {
+  color: #22314d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #d9531e;
+}
+
 .contact-modal-backdrop {
   position: fixed;
   inset: 0;
@@ -642,7 +656,7 @@ h1 {
     align-items: flex-start;
   }
 
-  .brand {
+  .topbar-contact {
     align-self: center;
   }
 

@@ -1145,13 +1145,10 @@ export default function App() {
   return (
     <div className="page-shell">
       <header className="topbar">
-        <a className="brand" href="#">
-          <div className="brand-mark">N</div>
-          <div>
-            <p className="brand-name">Nevest Renovation</p>
-            <span className="brand-tag">Transforming spaces beautifully</span>
-          </div>
-        </a>
+        <div className="topbar-contact">
+          <a href="tel:+16479173887">647-917-3887</a>
+          <a href="mailto:nevest.morrison@gmail.com">nevest.morrison@gmail.com</a>
+        </div>
 
         <div className="header-nav-stack">
           <nav className="nav-links">
@@ -1212,6 +1209,13 @@ export default function App() {
           <HomePage onOpenContact={openContactModal} />
         )}
       </main>
+
+      <footer className="site-footer">
+        <div className="footer-contact">
+          <a href="tel:+16479173887">647-917-3887</a>
+          <a href="mailto:nevest.morrison@gmail.com">nevest.morrison@gmail.com</a>
+        </div>
+      </footer>
 
       {isContactOpen ? (
         <div className="contact-modal-backdrop" onClick={closeContactModal}>
